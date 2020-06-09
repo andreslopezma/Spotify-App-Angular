@@ -1,0 +1,10 @@
+<!--Loq ue se quiere hacer es que mientras que "loading" sea verdadero el mensaje de cargando se vizualise -->
+<app-loading *ngIf="loading"></app-loading>
+
+<div class="row" *ngIf="error">
+    <div class="col alert alert-danger">
+        Error {{ mensajeError }}
+    </div>
+</div>
+
+<app-tarjetas [items]="nuevasCanciones"></app-tarjetas>
